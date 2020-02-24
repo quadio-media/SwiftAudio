@@ -249,6 +249,13 @@ public class AudioPlayer: AVPlayerWrapperDelegate {
         
         loadArtwork(forItem: item)
     }
+
+    /**
+     Exposed media controls in lock/home
+     */
+    public func updateRemoteCommands() {
+        enableRemoteCommands(remoteCommands)
+    }
     
     /**
      Resyncs the playbackvalues of the currently playing `AudioItem`.
